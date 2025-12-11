@@ -239,7 +239,7 @@ export default function App() {
 
         <label className="block mb-6 text-gray-300">
           <input type="checkbox" name="declare" checked={formData.declare} onChange={handleFormChange} className="mr-2" />
-          I declare under penalty of perjury under the laws of the United States of America that the foregoing is true and correct.
+          I declare under penalty of perjury under the applicable laws that the foregoing is true and correct.
         </label>
 
         <button className={buttonClass} onClick={submitForm}>Submit Form</button>
