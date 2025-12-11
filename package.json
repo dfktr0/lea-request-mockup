@@ -1,22 +1,25 @@
-
 {
   "name": "lea-request-mockup",
   "version": "1.0.0",
+  "private": true,
+  "homepage": "https://dfktr0.github.io/lea-request-mockup",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "pdfjs-dist": "^3.11.120",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "pdfjs-dist": "^4.0.379"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.0",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
+    "@vitejs/plugin-react": "^3.2.0",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.3",
     "vite": "^5.0.0"
   }
 }
